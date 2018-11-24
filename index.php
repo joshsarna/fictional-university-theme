@@ -1,15 +1,12 @@
 <?php get_header(); ?>
 
 <?php
-  function doubleMe($x) {
-    return $x * 2;
-  }
+  // Wordpress functions beginning with 'the' tend to echo, whereas functions beginning with 'get' tend to return
+  the_title();
+  get_the_id();
 
-  function tripleMe($x) {
-    return $x * 3;
-  }
-
-  echo tripleMe(doubleMe(5));
+  the_ID();
+  get_the_id();
 ?>
 
 <div class="page-banner">
