@@ -5,7 +5,11 @@
     return $x * 2;
   }
 
-  echo doubleMe(5);
+  function tripleMe($x) {
+    return $x * 3;
+  }
+
+  echo tripleMe(doubleMe(5));
 ?>
 
 <div class="page-banner">
