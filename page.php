@@ -23,13 +23,23 @@
         <?php }
       ?>
       
-      <!-- <div class="page-links">
+      <div class="page-links">
         <h2 class="page-links__title"><a href="#">About Us</a></h2>
         <ul class="min-list">
-          <li class="current_page_item"><a href="#">Our History</a></li>
-          <li><a href="#">Our Goals</a></li>
+          <?php
+
+            $animalSounds = array(
+              'cat' => 'meow',
+              'dog' => 'bark',
+              'pig' => 'oink'
+            );
+
+            echo $animalSounds['dog'];
+
+            wp_list_pages();
+          ?>
         </ul>
-      </div> -->
+      </div>
 
       <div class="generic-content">
         <?php the_content(); ?>

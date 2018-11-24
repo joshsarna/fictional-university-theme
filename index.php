@@ -1,14 +1,5 @@
 <?php get_header(); ?>
 
-<?php
-  // Wordpress functions beginning with 'the' tend to echo, whereas functions beginning with 'get' tend to return
-  the_title();
-  get_the_id();
-
-  the_ID();
-  get_the_id();
-?>
-
 <div class="page-banner">
   <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/library-hero.jpg') ?>);"></div>
     <div class="page-banner__content container t-center c-white">
